@@ -42,10 +42,16 @@ class Pasajero{
     }
 
     public function darPorcentajeIncremento(){
+        $porcjIncremento= 10;
+        return $porcjIncremento;
+    }
 
-        
-
-
+    public function __toString()
+    {
+        return 
+        "Nombre: ".$this->getNombre()."\n".
+        "Num Asiento: ".$this->getNumeroAsiento()."\n".
+        "Numero Ticket: ".$this->getNumeroTicket()."\n";
     }
 
 
